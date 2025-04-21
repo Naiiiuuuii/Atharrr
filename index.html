@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أثـر</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>أثـر</h1>
+    <p>موقع إلكتروني للتبرع بالأجهزة الإلكترونية والكهربائية الصالحة</p>
+</header>
+
+<section class="intro">
+    <h2>مرحبًا بك في موقع أثـر</h2>
+    <p>نحن نسعى لتوفير منصة سهلة وآمنة للمساهمة في توفير الأجهزة الكهربائية والإلكترونية للأفراد المحتاجين.</p>
+</section>
+
+<section class="login">
+    <h3>تسجيل الدخول</h3>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="اسم المستخدم" required><br>
+        <input type="password" id="password" placeholder="كلمة المرور" required><br>
+        <select id="gender" required>
+            <option value="ذكر">ذكر</option>
+            <option value="أنثى">أنثى</option>
+        </select><br>
+        <input type="number" id="age" placeholder="العمر" min="10" max="100" required><br>
+        <button type="submit">دخول</button>
+    </form>
+</section>
+
+<section class="service-selection">
+    <h3>اختر نوع الخدمة</h3>
+    <div class="buttons-container">
+        <button onclick="showDonationForm()">تبرع</button>
+        <button onclick="showSellingForm()">بيع</button>
+    </div>
+</section>
+
+<section class="service-options" id="donationForm" style="display:none;">
+    <h3>تفاصيل التبرع</h3>
+    <p>يرجى ملء التفاصيل للتبرع بالأجهزة.</p>
+    <input type="text" placeholder="اسم الجهاز" id="donationDeviceName"><br>
+    <textarea placeholder="تفاصيل الجهاز" id="donationDetails"></textarea><br>
+    <button onclick="submitDonation()">إرسال التبرع</button>
+</section>
+
+<section class="service-options" id="sellingForm" style="display:none;">
+    <h3>تفاصيل البيع</h3>
+    <p>يرجى ملء التفاصيل لبيع الجهاز.</p>
+    <input type="text" placeholder="اسم الجهاز" id="sellingDeviceName"><br>
+    <textarea placeholder="تفاصيل الجهاز" id="sellingDetails"></textarea><br>
+    <button onclick="submitSelling()">إرسال البيع</button>
+</section>
+
+<section class="services">
+    <h3>الخدمات المقدمة</h3>
+    <ul>
+        <li>استلام الأجهزة الإلكترونية من المتبرعين</li>
+        <li>فحص وصيانة الأجهزة (في حالة الحاجة)</li>
+        <li>توزيع الأجهزة على الفئات المحتاجة</li>
+        <li>توفير منصة للبيع للأجهزة المستعملة</li>
+    </ul>
+</section>
+
+<section class="audiences">
+    <h3>الفئات التي نخدمها</h3>
+    <ul>
+        <li>الأسر ذات الدخل المحدود</li>
+        <li>الطلاب</li>
+        <li>الجمعيات الخيرية</li>
+        <li>المؤسسات التعليمية</li>
+    </ul>
+</section>
+
+<section class="delivery-options">
+    <h3>خيارات التوصيل</h3>
+    <div class="buttons-container">
+        <button>تسليم يدوي</button>
+        <button>توصيل إلى العنوان</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 جميع الحقوق محفوظة لموقع أثـر</p>
+</footer>
+
+</body>
+</html>
